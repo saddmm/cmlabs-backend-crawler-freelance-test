@@ -55,28 +55,28 @@ curl -X POST http://localhost:5000/api/crawl \
 
 ```json
 {
-  "code":    200,
-			"status":  "OK",
-			"message": "Crawling process completed",
-			"data": [
-          {
-            "url": "https://cmlabs.co",
-            "file_url": "http://localhost:5000/outputs/cmlabs.co_1775547348.html",
-            "status": "Success"
-          },
-          {
-            "url": "https://sequence.day",
-            "file_url": "http://localhost:5000/outputs/sequence.day_1775547345.html",
-            "status": "Success"
-          },
-          ...
-      ],
-			"meta": {
-				"total_urls":     3,
-				"success_count":  3,
-				"failed_count":   0,
-				"execution_time": "4.476348s",
-			},
+  	"code": 200,
+	"status": "OK",
+	"message": "Crawling process completed",
+	"data": [
+		{
+			"url": "https://cmlabs.co",
+			"file_url": "http://localhost:5000/outputs/cmlabs.co_1775547348.html",
+			"status": "Success"
+		},
+		{
+			"url": "https://sequence.day",
+			"file_url": "http://localhost:5000/outputs/sequence.day_1775547345.html",
+			"status": "Success"
+		},
+		...
+	],
+	"meta": {
+		"total_urls":     3,
+		"success_count":  3,
+		"failed_count":   0,
+		"execution_time": "4.476348s",
+	},
 }
 
 ```
